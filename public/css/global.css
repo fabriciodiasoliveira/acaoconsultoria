@@ -1,0 +1,41 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 14 de jan. de 2024, 11:51:44
+    Author     : fabricio
+*/
+
+  :root {
+    --black: #020c18;
+    --white: #aaaaaa;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    background-color: var(--black);
+    color: var(--white);
+  }
+  .fontes{
+    color: var(--white);
+    background-color: var(--black);
+  }
+  .banner{
+    text-align: center;
+    background: radial-gradient(var(--white), var(--black), var(--black));
+    font-weight: bolder;
+  }
+  a {
+    color: var(--white);
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  .navbar-light, .navbar-brand, .nav-item, .nav-link, li {
+    color: var(--white);
+  }
+  
