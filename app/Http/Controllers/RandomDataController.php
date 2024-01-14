@@ -16,8 +16,8 @@ class RandomDataController extends Controller
     
     public function index()
     {
-        $randomData = $this->model->getRandomData();
-        return view('welcome', compact('randomData'));
+        $dados = $this->model->getDados();
+        return view('welcome', compact('dados'));
     }
     public function create()
     {

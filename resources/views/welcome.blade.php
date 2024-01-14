@@ -2,10 +2,12 @@
 
 @section('content')
 <div class="container">
+    @foreach ($dados as $dado)
     <div class="row">
         <div class="col-md-12">
-            <h1>{{ $randomData }}</h1>
+            Primeiro nome: {{ $dado->first_name }}
         </div>
     </div>
+    @endforeach
 </div>
 @endsection
