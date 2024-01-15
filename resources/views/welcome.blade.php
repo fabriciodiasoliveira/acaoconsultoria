@@ -8,20 +8,28 @@
 <div class="container">
     @foreach ($dados as $dado)
     <div class="row">
+        <div class="col-md-12 text-center">
+            <img class="solid" src="{{ $dado->avatar }}" alt=" Foto do {{ $dado->first_name }}"/>
+        </div>
         <div class="col-md-12">
-            <img src="{{ $dado->avatar }}" alt=" Foto do {{ $dado->first_name }}"/>
+            <div class="col-md-1">
+                <button class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#sensíveis-{{ $dado->id }}">Dados Sensíveis</button>
+            </div>
         </div>
-        <div class="solid">
-            <div><h3>Dados sensíveis</h3></div>
-            <div class="{{ $cabecalho }} texto_cabecalho">id:</div>
-            <div class="{{ $corpo }}">{{ $dado->id }}</div>
+        <div id="sensíveis-{{ $dado->id }}" class="collapse">
+            <div class="solid">
+                <div><h3>Dados sensíveis</h3></div>
+                <div class="{{ $cabecalho }} texto_cabecalho">id:</div>
+                <div class="{{ $corpo }}">{{ $dado->id }}</div>
 
-            <div class="{{ $cabecalho }} texto_cabecalho">uid:</div>
-            <div class="{{ $corpo }}">{{ $dado->uid }}</div>
-            
-            <div class="{{ $cabecalho }} texto_cabecalho">Senha:</div>
-            <div class="{{ $corpo }}">{{ $dado->password }}</div>
+                <div class="{{ $cabecalho }} texto_cabecalho">uid:</div>
+                <div class="{{ $corpo }}">{{ $dado->uid }}</div>
+
+                <div class="{{ $cabecalho }} texto_cabecalho">Senha:</div>
+                <div class="{{ $corpo }}">{{ $dado->password }}</div>
+            </div>
         </div>
+        
         <div class="solid">
             <div><h3>Dados pessoais</h3></div>
             <div class="{{ $cabecalho }} texto_cabecalho">Nome completo:</div>

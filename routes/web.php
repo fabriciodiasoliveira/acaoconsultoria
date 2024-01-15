@@ -20,4 +20,4 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-Route::get('/api/', [RandomDataController::class, 'index'])->name('index');
+Route::get('/', [RandomDataController::class, 'index'])->name('index');
