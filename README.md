@@ -33,7 +33,7 @@
     </li>
     <li>Acesse a aplicação:
         <ul>
-            <li>Abra no navegador web [http://localhost:8000](http://localhost:8000)</li>
+            <li>Abra no navegador web localhost:8000</li>
         </ul>
     </li>
 </ul>
