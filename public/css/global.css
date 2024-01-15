@@ -10,6 +10,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
   :root {
     --black: #020c18;
     --white: #aaaaaa;
+    --gray: #555555;
   }
   
   html,
@@ -23,11 +24,15 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     color: var(--white);
     background-color: var(--black);
   }
+  .texto_cabecalho{
+      font-weight: bold;
+  }
   .banner{
     text-align: center;
     background: radial-gradient(var(--white), var(--black), var(--black));
     font-weight: bolder;
   }
+  
   a {
     color: var(--white);
     text-decoration: none;
@@ -35,7 +40,13 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
   a:hover {
     text-decoration: underline;
   }
+  
   .navbar-light, .navbar-brand, .nav-item, .nav-link, li {
     color: var(--white);
   }
   
+  .solid {
+      border-style: solid;
+      border-color: var(--gray);
+      border-radius: 10px
+  }
