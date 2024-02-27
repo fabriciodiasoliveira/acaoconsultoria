@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-md-12">
             <center>
-                <h1><a href="{{ route('pessoas') }}">Crud</a></h1>
+                <h1><a class="btn btn-lg btn-success" href="{{ route('pessoas') }}">Crud</a></h1>
             </center>
         </div>
     </div>
