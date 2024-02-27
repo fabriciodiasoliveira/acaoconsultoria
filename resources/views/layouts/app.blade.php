@@ -18,6 +18,13 @@
 </head>
 <body>
     <div id="app">
+        <div class="row">
+            <div class="col-md-12">
+                <center>
+                    <h1><b>Ação consultoria</b></h1>
+                </center>
+            </div>
+        </div>
         <main class="py-4">
             @yield('content')
         </main>
