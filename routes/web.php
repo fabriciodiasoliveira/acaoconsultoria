@@ -14,10 +14,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//Route::get('/', function () {
-//    return view('welcome');
-//});
+Route::get('/', function () {
+    return view('welcome');
+});
 
 Auth::routes();
 
-Route::get('/', [RandomDataController::class, 'index'])->name('index');
+
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/pessoas', [App\Http\Controllers\PessoaController::class, 'index'])->name('pessoas');
+Route::get('/pessoas/create', [App\Http\Controllers\PessoaController::class, 'create'])->name('pessoas.create');
+Route::post('/pessoas/', [App\Http\Controllers\PessoaController::class, 'store'])->name('pessoas.store');
+Route::get('/pessoas/edit/{id}', [App\Http\Controllers\PessoaController::class, 'edit'])->name('pessoas.edit');
+Route::put('/pessoas/{id}', [App\Http\Controllers\PessoaController::class, 'update'])->name('pessoas.update');
+Route::delete('/pessoas/{id}', [App\Http\Controllers\PessoaController::class, 'destroy'])->name('pessoas.destroy');
